@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\Rider\\OS_practice\\OS_practice\\OS_practice.csproj": {}
+    "F:\\123\\OperatingSystems\\OS_practice\\OS_practice.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\Rider\\OS_practice\\OS_practice\\OS_practice.csproj": {
+    "F:\\123\\OperatingSystems\\OS_practice\\OS_practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Rider\\OS_practice\\OS_practice\\OS_practice.csproj",
+        "projectUniqueName": "F:\\123\\OperatingSystems\\OS_practice\\OS_practice.csproj",
         "projectName": "OS_practice",
-        "projectPath": "F:\\Projects\\Rider\\OS_practice\\OS_practice\\OS_practice.csproj",
+        "projectPath": "F:\\123\\OperatingSystems\\OS_practice\\OS_practice.csproj",
         "packagesPath": "C:\\Users\\Batroff\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Rider\\OS_practice\\OS_practice\\obj\\",
+        "outputPath": "F:\\123\\OperatingSystems\\OS_practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Batroff\\AppData\\Roaming\\NuGet\\NuGet.Config"

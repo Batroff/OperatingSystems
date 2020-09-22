@@ -70,7 +70,7 @@ namespace OS_practice
 
         public static void Decompress(string compressedFile, string targetFile)
         {
-            using (FileStream sourceStream = new FileStream(compressedFile, FileMode.Open))
+            using (FileStream sourceStream = new FileStream(compressedFile, FileMode.OpenOrCreate))
             {
                 using (FileStream targetStream = File.Create(targetFile))
                 {

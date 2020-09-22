@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using OS_practice.Practice1;
 
 namespace OS_practice
 {
@@ -41,9 +40,6 @@ namespace OS_practice
 
                     case ConsoleKey.D5:
                         Work5.foo();
-                        break;
-
-                    default:
                         break;
                 }
             }

@@ -18,10 +18,11 @@ namespace OS_practice
 
             Console.WriteLine("\n========================\n");
 
-            FileMethods.Decompress($"{path}.gz", $"{path}\\uncompressed-{fileName}.{fileExt}");
+            FileMethods.Decompress($"{path}\\{fileName}.gz", $"{path}\\uncompressed-{fileName}.{fileExt}");
             Console.WriteLine("Нажмите любую кнопку для удаления файла...");
             Console.ReadKey(true);
-            FileMethods.DeleteFile(path, $"{fileName}.{fileExt}");
+            FileMethods.DeleteFile(path, $"uncompressed-{fileName}.{fileExt}");
+            FileMethods.DeleteFile(path, $"{fileName}.gz");
 
             Console.WriteLine("========================");
         }

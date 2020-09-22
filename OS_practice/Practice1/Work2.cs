@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Text;
 using System.IO;
 
-namespace OS_practice
+namespace OS_practice.Practice1
 {
     class Work2
     {
