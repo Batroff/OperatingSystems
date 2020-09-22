@@ -8,24 +8,20 @@ namespace OS_practice
     {
         public static void foo()
         {
-            string path = @"D:\Documents\Files";
-            string fileName = "text.txt";
-            FileInfo fileInfo = new FileInfo($"{path}\\{fileName}");
-            fileInfo.Create();
-            Console.WriteLine(fileInfo.Name);
+            string path = Directory.GetCurrentDirectory();
+            string fileName = "test-gzip";
+            string fileExt = "txt";
 
+            if (!File.Exists($"{path}\\{fileName}.{fileExt}"))
+                FileMethods.WriteFile($"{fileName}.{fileExt}", path);
+            FileMethods.Compress($"{fileName}.{fileExt}", fileName + ".gz");
 
+            Console.WriteLine("\n========================\n");
+
+            FileMethods.Decompress($"{path}.gz", $"{path}\\uncompressed-{fileName}.{fileExt}");
             Console.WriteLine("Нажмите любую кнопку для удаления файла...");
             Console.ReadKey(true);
-            try
-            {
-                if (fileInfo.Exists) fileInfo.Delete();
-        
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine($"Ошибка при удалении файла!\n{e}");
-            }
+            FileMethods.DeleteFile(path, $"{fileName}.{fileExt}");
 
             Console.WriteLine("========================");
         }

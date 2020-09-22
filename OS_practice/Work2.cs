@@ -8,13 +8,10 @@ namespace OS_practice
     {
         public static void foo()
         {
-            string path = @"D:\Documents\Files";
+            string path = Directory.GetCurrentDirectory();
             string fileName = @"text.txt";
-            
-            DirectoryInfo directoryInfo = new DirectoryInfo(path);
-            if (!directoryInfo.Exists) directoryInfo.Create();
-            
-            FileMethods.WriteFile(path, fileName);
+
+            FileMethods.WriteFile(fileName, path);
             Console.WriteLine($"Текст файла:\n{FileMethods.ReadFile(path, fileName)}");
 
             Console.WriteLine("Нажмите любую кнопку для удаления файла...");
