@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
-using System.IO.Compression;
 
-namespace OS_practice
+namespace OS_practice.Practice1
 {
+    // 5. Создание zip архива, добавление туда файла, определение размера архива
     class Work5
     {
         public static void foo()

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace OS_practice
+﻿namespace OS_practice
 {
     class Program
     {

@@ -2,8 +2,9 @@
 using System.IO;
 using System.Text.Json;
 
-namespace OS_practice
+namespace OS_practice.Practice1
 {
+    // 3. Работа с форматом JSON
     class Work3
     {
         public static void foo()

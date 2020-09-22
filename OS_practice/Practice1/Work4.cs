@@ -2,8 +2,9 @@
 using System.IO;
 using System.Xml.Linq;
 
-namespace OS_practice
+namespace OS_practice.Practice1
 {
+    // 4. Работа с форматом XML
     class Work4
     { 
         public static void foo()
